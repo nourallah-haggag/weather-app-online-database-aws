@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/cloudy" />
+
+        <TextView
+            android:id="@+id/main_txt_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/image"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc_txt_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_txt_item"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/image"
+            android:text="TextView"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/lat_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc_txt_item"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/image"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/lon_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lat_item"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/image"
+            android:text="TextView" />
+    </RelativeLayout>
+
+
+
+
+
+
+</android.support.v7.widget.CardView>
